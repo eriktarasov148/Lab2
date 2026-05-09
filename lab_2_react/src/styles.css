@@ -1,0 +1,89 @@
+/* styles.css */
+
+/* Загальні стилі */
+body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #1f2937;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #2563eb, #6366f1); /* blue to indigo gradient */
+  color: white;
+  padding: 2.5rem 0; /* py-10 ~ 2.5rem top/bottom */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-lg */
+}
+
+header h1 {
+  font-size: 3rem; /* text-5xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 0.5rem; /* mb-2 */
+}
+
+header p {
+  font-size: 1.25rem; /* text-xl */
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Container max width */
+.max-w-4xl {
+  max-width: 64rem; /* 1024px */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Card-like sections (Experience, Education) */
+section {
+  background-color: white;
+  border-radius: 0.75rem; /* rounded-xl */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); /* shadow-md */
+  padding: 1.5rem; /* p-6 */
+  margin: 2rem auto;
+  max-width: 32rem; /* 512px */
+  transition: box-shadow 0.3s ease;
+}
+
+section:hover {
+  box-shadow: 0 10px 15px rgba(0,0,0,0.15); /* hover:shadow-xl */
+}
+
+/* Section headings */
+section h2 {
+  font-size: 1.5rem; /* text-2xl */
+  font-weight: 700; /* font-bold */
+  margin-bottom: 1rem;
+  color: #1f2937; /* text-slate-800 */
+}
+
+section h3 {
+  font-size: 1.125rem; /* text-lg */
+  font-weight: 600; /* font-semibold */
+  margin-top: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+section p {
+  margin: 0;
+  color: #4b5563; /* slate-600 */
+}
+
+/* Footer */
+footer {
+  background-color: #1e293b; /* bg-slate-800 */
+  color: white;
+  text-align: center;
+  padding: 1.5rem 0; /* py-6 */
+  margin-top: 2.5rem; /* mt-10 */
+}
+
+footer p {
+  opacity: 0.8;
+  margin: 0;
+}

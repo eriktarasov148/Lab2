@@ -1,28 +1,26 @@
 function Header() {
   return (
-    <header>
-      <h1>Тарасов Ерік</h1>
-      <p>Студент / Початківець Python та WEB-розробник</p>
+    /* Додано:
+       dark:from-slate-800 dark:to-slate-900 — темний градієнт для нічного режиму
+       transition-colors duration-300 — плавна зміна кольору
+       (text-white залишається для обох тем, бо білий текст добре читається і на синьому, і на темному)
+    */
+    <header className="bg-gradient-to-r from-blue-600 to-indigo-600 dark:from-slate-800 dark:to-slate-900 text-white py-10 shadow-lg transition-colors duration-300">
+      
+      <div className="max-w-4xl mx-auto text-center">
 
-      <section>
-        <h2>Контактна інформація</h2>
-        <ul>
-          <li>Email: eric.tarasov@gmail.com</li>
-          <li>Телефон: +380681759450</li>
-          
-        </ul>
-      </section>
+        <h1 className="text-5xl font-bold mb-2">
+          Eric Tarasov
+        </h1>
 
-      <section>
-        <h2>Про мене</h2>
-        <p>
-          Я студент, який вивчає програмування та інформаційні технології.
-          Маю базові знання Python, HTML та роботи з комп’ютерними системами.
-          Зацікавлений у розвитку в сфері веб-розробки та програмування.
+        <p className="text-xl opacity-90">
+          Frontend Web Developer
         </p>
-      </section>
+
+      </div>
+
     </header>
-  );
+  )
 }
 
 export default Header;
